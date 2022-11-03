@@ -1,12 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Static Template</title>
+    <link rel = "stylesheet" href = "./css/reset.css">
+    <link rel = "stylesheet" href = "./css/style.css">
+    <title>BuzzQuizz</title>
   </head>
   <body>
-    <h1>This is a static template, there is no bundler or bundling involved!</h1>
+    <header>BuzzQuizz</header>
+    <div class="container">
+        <aside> <!--Aqui irão os quizzes do usuário-->
+            <p class = "textoSemQuizz">Você não criou nenhum quiz ainda :(</p>
+            <p class = "textoCriarQuizz">Criar Quizz</p>
+        </aside>
+        <main>
+            <p class = "textoTodosOsQuizzes">Todos os Quizzes</p>
+            <div class="quizzes"> <!--Coloquei imagens aleatórias só para testar se estava certo o display-->
+                <img src = "imagem.png">
+                <img src = "imagem.png">
+                <img src = "imagem.png">
+                <img src = "imagem.png">
+                <img src = "imagem.png">
+                <img src = "imagem.png">
+            </div>
+        </main>
+    </div>
   </body>
 </html>
