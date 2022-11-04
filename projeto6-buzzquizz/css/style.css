@@ -68,13 +68,13 @@ aside {
     justify-content: center;
     color: #EC362D;
     box-sizing: border-box;
-    background: ##E5E5E5;
+    background: #E5E5E5;
     border: 1px dashed #EC362D;
     border-radius: 50px;
 }
 
-main {
-}
+/*main {
+}*/
 
 .textoTodosOsQuizzes {
     margin-bottom: 12px;
@@ -99,6 +99,18 @@ main {
 img {
     margin-bottom: 19px;
 }
+
+.formatoDoQuizz {
+    width: 340px;
+    height: 181px;
+    margin-top: 12px;
+    border-radius: 5px;
+    background-color: black;
+    background-size: 100% 100% !important;
+    position: relative;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .container-criacao1{
     width: 100%;
