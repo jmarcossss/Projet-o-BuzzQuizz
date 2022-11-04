@@ -108,6 +108,10 @@ img {
     background-color: black;
     background-size: 100% 100% !important;
     position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    color: #FFFFFF;
 }
 
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
