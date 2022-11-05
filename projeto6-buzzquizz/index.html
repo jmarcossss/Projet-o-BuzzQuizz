@@ -30,10 +30,10 @@
         </main>
     </div>
 
-    <!-- Container de criação de quiz -->
+     <!-- Container de criação de quiz -->
 
     <!-- Tela 3.1 -->
-    <div class="container-criacao1">
+    <div class="container-criacao1 esconder">
 
       <p>Comece pelo começo</p>
 
@@ -46,49 +46,21 @@
       
       </div>
 
-      <bottom class="botao-proceguir-criar-perguntas">Prosseguir pra criar perguntas</bottom>
+      <bottom class="botao-proceguir-criar-perguntas" >Prosseguir pra criar perguntas</bottom>
 
     </div>
 
     <!-- Tela 3.2 -->
-    <div class="container-criacao2">
+    <div class="container-criacao2 esconder">
 
       <p>Crie suas perguntas</p>
-
-      <div class="entrada-infop1">
-        
-        <p>Pergunta 1</p>
-        <input type="text" class="texto-pergunta container-input" placeholder="Texto da pergunta">
-        <input type="text" class="cor-fundo container-input" placeholder="Cor de fundo da pergunta">
-        <p>Resposta correta</p>
-        <input type="text" class="resposa-correta container-input" placeholder="Resposta correta">
-        <input type="text" class="url-img container-input" placeholder="URL da imagem">
-        <p>Respostas incorretas</p>
-        <input type="text" class="resposa-incorreta1 container-input" placeholder="Resposta incorreta 1">
-        <input type="text" class="url-img-incorreta1 container-input" placeholder="URL da imagem 1">
-        <input type="text" class="resposa-incorreta2 container-input" placeholder="Resposta incorreta 2">
-        <input type="text" class="url-img-incorreta2 container-input" placeholder="URL da imagem 2">
-        <input type="text" class="resposa-incorreta3 container-input" placeholder="Resposta incorreta 3">
-        <input type="text" class="url-img-incorreta3 container-input" placeholder="URL da imagem 3">
-
-      </div>
-
-      <div class="entrada-info-reduzida">
-        <p>Pergunta 2</p>
-        <bottom class="expandir"><ion-icon name="create-outline"></ion-icon></bottom>
-      </div>
-
-      <div class="entrada-info-reduzida">
-        <p>Pergunta 3</p>
-        <bottom class="expandir"><ion-icon name="create-outline"></ion-icon></bottom>
-      </div>
-
+      <ul class="info-Pergunta"></ul>
       <bottom class="botao-criar-niveis">Prosseguir pra criar níveis</bottom>
 
     </div>
 
     <!-- Tela 3.3 -->
-    <div class="container-criacao3">
+    <div class="container-criacao3 esconder">
 
       <p>Agora, decida os níveis</p>
       <div class="entrada-info-nivel">
@@ -101,12 +73,12 @@
       
       </div>
 
-      <div class="entrada-info-reduzida">
+      <div class="entrada-info-reduzida esconder">
 
         <p>Nível 2</p>
         <bottom class="expandir"><ion-icon name="create-outline"></ion-icon></bottom>
 
-      </div> 
+      </div>
 
       <div class="entrada-info-reduzida">
 
@@ -121,7 +93,7 @@
     </div>
 
     <!-- Tela 3.4 -->
-    <div class="container-criacao4">
+    <div class="container-criacao4 esconder">
 
       <p>Seu quizz está pronto!</p>
       <img src="">
@@ -130,7 +102,6 @@
     </div>
 
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src = "script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

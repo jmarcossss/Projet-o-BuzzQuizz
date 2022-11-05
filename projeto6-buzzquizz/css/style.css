@@ -116,11 +116,12 @@ img {
 
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
+/* css criação de quizz*/
 .container-criacao1{
     width: 100%;
     height: 100%;
     background-color: #FAFAFA;
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -130,7 +131,7 @@ img {
     width: 100%;
     height: 100%;
     background-color: #FAFAFA;
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -140,7 +141,7 @@ img {
     width: 100%;
     height: 100%;
     background-color: #FAFAFA;
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -149,7 +150,7 @@ img {
     width: 100%;
     height: 100%;
     background-color: #FAFAFA;
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -376,4 +377,8 @@ img {
     justify-content: center;
     align-items: center;
     line-height: 25px;
+}
+
+.esconder{
+    display: none;
 }
