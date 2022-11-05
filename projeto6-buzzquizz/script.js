@@ -1,3 +1,4 @@
+/*
 const url = "https://mock-api.driven.com.br/api/v4/buzzquizz/quizzes";
 let quizzesTotais = [];
 
@@ -23,26 +24,57 @@ function quizzesNaTela(valor) {
       }
       /*let elementoQueQueroQueApareca = document.querySelector('quizzNaTela').lastElementChild;
       console.log(quizzesTotais);*/
-}
+/*}
 
 pegarQuizzesDaAPI();
-
+*/
 
 // Parte Diego Koyama
-let tituloQuizz = document.querySelector(".titulo").value;
-let urlQuizz = document.querySelector(".url").value;
-let nPerguntasQuizz = document.querySelector(".nQuizz").value;
-let niveisQuizz = document.querySelector(".niveis").value;
+
 const containerCriacao1 = document.querySelector(".container-criacao1");
 const containerCriacao2 = document.querySelector(".container-criacao2");
 let respostaVUrl;
+
+// Tela 3.1 - Informações básicas do quizz
+
+
+function verificarUrl(string){
+    try{
+        let urlI = new URL(string);
+        respostaVUrl = true;
+    } catch(err){
+        respostaVUrl = false;
+    }
+}
+
+function verificarIBasicas(){
+    if(tituloQuizz.length >= 20 && tituloQuizz.length <= 65){
+        
+    }
+}
+
+document.querySelector(".botao-proceguir-criar-perguntas").addEventListener("click", () => {
+
+    let tituloQuizz = document.querySelector(".titulo").value;
+    let urlQuizz = document.querySelector(".urlImg").value;
+    let nPerguntasQuizz = document.querySelector(".nQuizz").value;
+    let niveisQuizz = document.querySelector(".niveis").value;
+    verificarUrl(urlQuizz);
+    if(tituloQuizz.length >= 20 && tituloQuizz.length <= 65 && respostaVUrl == true && nPerguntasQuizz >= 3 && niveisQuizz >= 2){
+        containerCriacao1.classList.toggle("esconder");
+        containerCriacao2.classList.toggle("esconder");
+    }
+
+});
+
 
 // Tela 3.2 - Perguntas do quizz
 nPerguntas();
 
 function nPerguntas(){
     const pergunta = document.querySelector(".info-Pergunta");
-    pergunta.innerHTML = "";    
+    pergunta.innerHTML = ""; 
+    let nPerguntasQuizz = 3;   
     for(i = 0; i < nPerguntasQuizz; i++){
         let cont = i+1;
         if(cont===1){
